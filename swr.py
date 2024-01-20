@@ -22,7 +22,8 @@ sentence_window_engine = get_sentence_window_query_engine(sentence_index)
 window_response = sentence_window_engine.query(
     "What are some trading chart patterns to look out for when making trading decisions?"
 )
-print(str(window_response))
+test_question = "What are some trading chart patterns to look out for when making trading decisions?"
+print("\n" + test_question+"\n" + "\n" +str(window_response) + "\n")
 
 tru.reset_database()
 
@@ -31,6 +32,8 @@ tru_recorder_sentence_window = get_prebuilt_trulens_recorder(
     app_id = "Sentence Window Query Engine"
 )
 
+new_question = "What are the advantages of long-term vs. short-term investing?"
+eval_questions.append(new_question)
 for question in eval_questions:
     with tru_recorder_sentence_window as recording:
         response = sentence_window_engine.query(question)
