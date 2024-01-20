@@ -4,5 +4,5 @@
 # https://learn.deeplearning.ai/building-evaluating-advanced-rag/
 # https://github.com/truera/trulens
 # https://github.com/run-llama/llama_index
-# https://chatgen.ai/blog/evaluation-of-rag-pipeline-using-llms/#:~:text=ground%20truth%20evals.-,RAG%20Triad%20of%20Metrics,LLMs%20for%20context%20relevance%20scoring.
+# https://chatgen.ai/blog/evaluation-of-rag-pipeline-using-llms/
  
