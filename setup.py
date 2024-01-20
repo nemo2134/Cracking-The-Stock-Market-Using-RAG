@@ -22,10 +22,12 @@ service_context = ServiceContext.from_defaults(
 index = VectorStoreIndex.from_documents([document],
                                         service_context=service_context)
 query_engine = index.as_query_engine()
+
+test_query = "What are the steps to become a successful stock trader?"
 response = query_engine.query(
-    "What are the steps to become a successful stock trader?"
+    test_query
 )
-print("\n"+str(response))
+print(test_query+"\n"+str(response))
 
 #Evaluation setup using TruLens
 eval_questions = []
@@ -38,9 +40,9 @@ eval_questions = []
 #         eval_questions.append(item)
 
 # Add your own question
-new_question = "What is the right brokerage for me?"
+new_question = "What are some chart patterns to know before trading stocks?"
 eval_questions.append(new_question)
-print(eval_questions)
+# print(eval_questions)
 from trulens_eval import Tru
 tru = Tru()
 tru.reset_database()
@@ -80,7 +82,7 @@ app.layout = html.Div([
 ])
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
 
 
 from selenium import webdriver
@@ -88,7 +90,7 @@ import time
 
 def capture_dashboard():
     # Set the path for your WebDriver
-    driver = webdriver.Chrome('path/to/chromedriver')
+    driver = webdriver.Chrome('/path/to/your/chromedriver')
     driver.get('http://localhost:8050')  # The URL where your dash app is running
     time.sleep(5)  # Wait for the page to load
     driver.save_screenshot('dashboard.png')
