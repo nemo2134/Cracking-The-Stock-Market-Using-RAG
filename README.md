@@ -1,7 +1,7 @@
 # Cracking-The-Stock-Market
 
 ## Introduction
-This repository demonstrates simple and advanced RAG (Retrieval-Augmented Generation) systems, focusing on their application in stock market analysis.
+This repository demonstrates simple and advanced RAG (Retrieval-Augmented Generation) systems, focusing on application in stock market analysis.
 
 ## Pre-setup Instructions
 Before starting, please ensure you have completed the following steps:
