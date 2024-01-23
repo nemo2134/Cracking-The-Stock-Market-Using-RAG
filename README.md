@@ -9,7 +9,7 @@ Before starting, please ensure you have completed the following steps:
 1. **API Key**: Obtain your API key from [OpenAI](https://openai.com).
     - Navigate to the "API Keys" tab in your account.
     - Copy your API Key.
-    - In the terminal of your code environment, run: `setx OPENAI_API_KEY "Paste your API Key here"`.
+    - In the terminal of your code environment, run: `setx OPENAI_API_KEY "Paste your API Key here"`. (Windows)
 
 2. **Dependencies**: Install all necessary dependencies and update code syntax with newer versions as needed.
 
